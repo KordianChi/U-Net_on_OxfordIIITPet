@@ -14,8 +14,23 @@ Model is simply U-Net-style network, with encoder based on convolution-relu-batc
 
 I trained this network on Kaggle kernel with Tesla P100 GPU. After 15 epochs, results are pretty neat.
 
-![Abyssian](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_1_org.png) ![Abyssian](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_1_target.png) ![Abyssian](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_1_pred.png)
+### Ground truth
+![Abyssian](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_1_org.png)
+### Segmentation
+![Abyssian](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_1_pred.png)
+### Target mask
+![Abyssian](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_1_target.png)
 
-![Pug](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_2_org.png) ![Pug](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_2_target.png) ![Pug](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_2_pred.png)
+### Ground truth
+![Pug](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_2_org.png)
+### Segmentation
+![Pug](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_2_pred.png)
+### Target mask
+![Pug](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_2_target.png)
 
-![Bulldog](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_3_org.png) ![Bulldog](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_3_target.png) ![Bulldog](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_3_pred.png)
+### Ground truth
+![Bulldog](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_3_org.png)
+### Segmentation
+![Bulldog](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_3_pred.png)
+### Target mask
+![Bulldog](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_3_target.png)
