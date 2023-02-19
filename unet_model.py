@@ -16,9 +16,6 @@ def double_conv_block(channel_in, channel_out):
     conv_block = Sequential(
         Conv2d(channel_in, channel_out, 3, 1 ,1),
         ReLU(),
-        BatchNorm2d(channel_out),
-        Conv2d(channel_out, channel_out, 3, 1 ,1),
-        ReLU(),
         BatchNorm2d(channel_out)
         )
     return conv_block
@@ -80,25 +77,25 @@ class UNet(Module):
         
         # decoder step
         
-        out = self.decoder_deconv_block_1(out_9)
-        out = cat([out, out_7])
-        out = self.decoder_conv_block_1(out)
+        out_10 = self.decoder_deconv_block_1(out_9)
+        out_11 = cat((out_10, out_7), dim=1)
+        out_12 = self.decoder_conv_block_1(out_11)
+    
+        out_13 = self.decoder_deconv_block_2(out_12)
+        out_14 = cat((out_13, out_5), dim=1)
+        out_15 = self.decoder_conv_block_2(out_14)
         
-        out = self.decoder_deconv_block_1(out)
-        out = cat([out, out_5])
-        out = self.decoder_conv_block_1(out)
+        out_16 = self.decoder_deconv_block_3(out_15)
+        out_17 = cat((out_16, out_3), dim=1)
+        out_18 = self.decoder_conv_block_3(out_17)
         
-        out = self.decoder_deconv_block_1(out)
-        out = cat([out, out_3])
-        out = self.decoder_conv_block_1(out)
+        out_19 = self.decoder_deconv_block_4(out_18)
+        out_20 = cat((out_19, out_1), dim=1)
+        out_21 = self.decoder_conv_block_4(out_20)
         
-        out = self.decoder_deconv_block_1(out)
-        out = cat([out, out_1])
-        out = self.decoder_conv_block_1(out)
-        
-        final_out = self.output_conv(out)
-        
-        return final_out.to(device)
+        final_out = self.output_conv(out_21)
+    
+        return final_out
         
         
         
