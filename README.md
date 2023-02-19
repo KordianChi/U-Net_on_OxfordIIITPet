@@ -14,4 +14,8 @@ Model is simply U-Net-style network, with encoder based on convolution-relu-batc
 
 I trained this network on Kaggle kernel with Tesla P100 GPU. After 15 epochs, results are pretty neat.
 
-![Abyssian](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_1_org.png) ![Abyssian](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_1_pred.png) ![Abyssian](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_1_target.png)
+![Abyssian](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_1_org.png) ![Abyssian](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_1_target.png) ![Abyssian](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_1_pred.png)
+
+![Pug](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_2_org.png) ![Pug](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_2_target.png) ![Pug](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_2_pred.png)
+
+![Bulldog](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_3_org.png) ![Bulldog](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_3_target.png) ![Bulldog](https://github.com/KordianChi/U-Net_on_OxfordIIITPet/blob/main/results/example_3_pred.png)
